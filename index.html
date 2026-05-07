@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>戦略参謀</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>戦略参謀</h1>
+  <p>Strategy Decision Support Tool for Evony</p>
 
+  <button onclick="startWizard()">Start Wizard</button>
+
+  <script>
+    function startWizard() {
+      const spend = prompt("Spend level? (F2P / Low / Mid / Whale)");
+      const playstyle = prompt("Playstyle? (PvP / PvE / Balanced)");
+
+      if (spend === "F2P" && playstyle === "PvP") {
+        alert("Profile: F2P Raider\nFocus: economy + cheap troops + timing attacks");
+      } else {
+        alert("Profile: Balanced Player\nFocus: steady progression");
+      }
+    }
+  </script>
+</body>
+</html>
